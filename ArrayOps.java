@@ -1,3 +1,4 @@
+
 public class ArrayOps{
 
   public static int sum(int[] arr) {
@@ -5,8 +6,10 @@ public class ArrayOps{
     if (arr.length == 0) {
       return 0;
     }
+    else {
     for (int i =0; i != arr.length; i++) {
     summ = summ + arr[i];
+    }
     }
     return summ;
   }
@@ -20,6 +23,23 @@ public class ArrayOps{
     }
     return large;
   }
-  
+  public static int[] sumRows(int[][] matrix) {
+    int[] a;
+
+    a = new int[matrix.length];
+    for(int i = 0; i != matrix.length; i++) {
+        int rowsum=0;
+      if (matrix[i].length == 0) {
+        rowsum = 0;
+      }
+      else {
+      for(int j=0; j!= matrix[i].length; j++) {
+        rowsum = rowsum + matrix[i][j];
+      }
+      a[i] = rowsum;
+    }
+  }
+    return a;
+  }
 
 }
