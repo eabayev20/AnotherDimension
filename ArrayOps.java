@@ -10,7 +10,16 @@ public class ArrayOps{
     }
   return summ;
   }
-
+  public static int largest (int[] arr) {
+    int large = 0;
+    for (int i = 0; i != arr.length; i++) {
+      large = arr[i];
+      if (arr[i] > large) {
+        large = arr[i];
+      }
+    }
+    return large;
+  }
 
 
 }
