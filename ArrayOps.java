@@ -8,7 +8,7 @@ public class ArrayOps{
     for (int i =0; i != arr.length; i++) {
     summ = summ + arr[i];
     }
-  return summ;
+    return summ;
   }
   public static int largest (int[] arr) {
     int large = 0;
@@ -20,6 +20,6 @@ public class ArrayOps{
     }
     return large;
   }
-
+  
 
 }
