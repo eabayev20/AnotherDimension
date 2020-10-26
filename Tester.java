@@ -15,5 +15,6 @@ public class Tester{
       int[][] GG = {{},{2,3,4},{3,4,5}};
         System.out.println(Arrays.toString(ArrayOps.sumRows(GG)).replace("], ","],\n"));
         System.out.println(Arrays.toString(ArrayOps.largestInRows(FF)).replace("], ","],\n"));
+        System.out.println(ArrayOps.sum(FF));
   }
 }

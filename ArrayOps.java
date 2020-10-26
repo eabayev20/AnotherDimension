@@ -58,6 +58,15 @@ public class ArrayOps{
       b[i] = largenum;
 
     }
+
+
     return b;
+  }
+  public static int sum(int[][] matrix) {
+    int total = 0;
+    for (int i = 0; i != matrix.length; i++) {
+      total = total + sum(matrix[i]);
+    }
+    return total;
   }
 }
