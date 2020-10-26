@@ -16,5 +16,6 @@ public class Tester{
         System.out.println(Arrays.toString(ArrayOps.sumRows(GG)).replace("], ","],\n"));
         System.out.println(Arrays.toString(ArrayOps.largestInRows(FF)).replace("], ","],\n"));
         System.out.println(ArrayOps.sum(FF));
+        System.out.println(Arrays.toString(ArrayOps.sumCols(FF)).replace("], ","],\n"));
   }
 }

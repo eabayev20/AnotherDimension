@@ -69,4 +69,18 @@ public class ArrayOps{
     }
     return total;
   }
+  public static int[] sumCols(int[][] matrix) {
+    int[] b;
+
+    b = new int[matrix[0].length];
+    for (int j = 0; j != matrix[0].length; j++){
+      int colsum = 0;
+      for (int i = 0; i!=matrix.length;i++) {
+        colsum = matrix[i][j];
+        b[j] = b[j]+colsum;
+      }
+
+    }
+    return b;
+  }
 }
