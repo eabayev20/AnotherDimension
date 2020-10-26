@@ -21,9 +21,13 @@ public class Tester{
         int[][] HH = {{1,2,3},{1,3,2},{2,3,1}};
         System.out.println(ArrayOps.isRowMagic(HH));
         System.out.println(ArrayOps.isColMagic(FF));
-        int[][] II = {{1,2,3},{1,2,3},{1,2,3}};
-        System.out.println(ArrayOps.isColMagic(HH));
+        int[][] II = {{4,2,4},{1,2,-2},{0,1,3}};
+        System.out.println(ArrayOps.isColMagic(II));
         int[][] LL = {{},{},{}};
         System.out.println(ArrayOps.isColMagic(LL));
+        int[][] KK = {{2,4,2},{2,2,2}};
+        System.out.println(ArrayOps.isLocationMagic(KK, 0, 1));
+        System.out.println(ArrayOps.isLocationMagic(KK, 1, 1));
+
   }
 }
