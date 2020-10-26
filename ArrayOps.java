@@ -100,7 +100,18 @@ public class ArrayOps{
     }
     return zzz == 0;
     }
+  public static boolean isColMagic(int[][] matrix) {
+      int[] e;
+      e = new int[matrix.length];
+      e = sumCols(matrix);
+      int zzzz = 0;
+      for (int i = 0; i != e.length; i++) {
+        if (e[0] != e[i]) {
+          zzzz = zzzz + 1;
+        }
 
-
+      }
+      return zzzz == 0;
+      }
 
 }

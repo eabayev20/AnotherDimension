@@ -20,6 +20,10 @@ public class Tester{
         System.out.println(ArrayOps.isRowMagic(FF));
         int[][] HH = {{1,2,3},{1,3,2},{2,3,1}};
         System.out.println(ArrayOps.isRowMagic(HH));
-        
+        System.out.println(ArrayOps.isColMagic(FF));
+        int[][] II = {{1,2,3},{1,2,3},{1,2,3}};
+        System.out.println(ArrayOps.isColMagic(HH));
+        int[][] LL = {{},{},{}};
+        System.out.println(ArrayOps.isColMagic(LL));
   }
 }
