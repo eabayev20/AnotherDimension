@@ -78,9 +78,29 @@ public class ArrayOps{
       for (int i = 0; i!=matrix.length;i++) {
         colsum = matrix[i][j];
         b[j] = b[j]+colsum;
+
+
+
+
       }
 
     }
     return b;
   }
+  public static boolean isRowMagic(int[][] matrix) {
+    int[] c;
+    c = new int[matrix.length];
+    c = sumRows(matrix);
+    int zzz = 0;
+    for (int i = 0; i != c.length; i++) {
+      if (c[0] != c[i]) {
+        zzz = zzz + 1;
+      }
+
+    }
+    return zzz == 0;
+    }
+
+
+
 }
